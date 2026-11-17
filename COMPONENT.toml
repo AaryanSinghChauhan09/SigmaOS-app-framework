@@ -3,12 +3,12 @@ name = "SigmaOS-app-framework"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "app-framework component"
+description = "Shared library for SigmaOS desktop applications providing widgets, layout primitives, theming, accessibility, and IPC"
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-theme-engine", "SigmaOS-compositor"]
 
 [maturity]
 status = "Scaffold"
